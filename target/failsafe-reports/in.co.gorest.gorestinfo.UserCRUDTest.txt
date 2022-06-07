@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: in.co.gorest.gorestinfo.UserCRUDTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 33.068 sec <<< FAILURE! - in in.co.gorest.gorestinfo.UserCRUDTest
+test006(in.co.gorest.gorestinfo.UserCRUDTest)  Time elapsed: 2.677 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.UserCRUDTest.test006(UserCRUDTest.java:82)
+
+test007(in.co.gorest.gorestinfo.UserCRUDTest)  Time elapsed: 3.031 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.UserCRUDTest.test007(UserCRUDTest.java:90)
+
+test009(in.co.gorest.gorestinfo.UserCRUDTest)  Time elapsed: 2.5 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.UserCRUDTest.test009(UserCRUDTest.java:110)
+
+test010(in.co.gorest.gorestinfo.UserCRUDTest)  Time elapsed: 2.929 sec  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.UserCRUDTest.test010(UserCRUDTest.java:118)
+

@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="in.co.gorest.gorestinfo.UserCRUDTest" time="31.441" tests="10" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="idea.version" value="2021.3.2"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\sanke\IdeaProjects\gorest-co-in-serenity-homework-week18"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\sanke\IdeaProjects\gorest-co-in-serenity-homework-week18"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\sanke\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Apache\apache-maven-3.8.5\bin;C:\Program Files\nodejs\;C:\Users\sanke\AppData\Local\Microsoft\WindowsApps;C:\Users\sanke\AppData\Roaming\npm;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\sanke"/>
+    <property name="user.timezone" value="Europe/London"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="sanke"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3\boot\plexus-classworlds.license;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2021.3.2 clean verify serenity:aggregate"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="test001" classname="in.co.gorest.gorestinfo.UserCRUDTest" time="5.766"/>
+  <testcase name="test002" classname="in.co.gorest.gorestinfo.UserCRUDTest" time="2.052"/>
+  <testcase name="test003" classname="in.co.gorest.gorestinfo.UserCRUDTest" time="1.43"/>
+  <testcase name="test004" classname="in.co.gorest.gorestinfo.UserCRUDTest" time="7.877"/>
+  <testcase name="test005" classname="in.co.gorest.gorestinfo.UserCRUDTest" time="1.551"/>
+  <testcase name="test006" classname="in.co.gorest.gorestinfo.UserCRUDTest" time="2.677">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.UserCRUDTest.test006(UserCRUDTest.java:82)
+</error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Authorization=Bearer 75c987adac5bd1820e58fb137137e2474501428068d1ec0dd68ae05bcff564c9
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 07 Jun 2022 17:44:25 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+X-Pagination-Total: 3654
+X-Pagination-Pages: 183
+X-Pagination-Page: 1
+X-Pagination-Limit: 20
+X-Links-Previous: 
+X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+ETag: W/"9d7541ccc6edcd62c8e379288fc6e6ea"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: bb63bb57-c748-4098-8d1a-d3955b27fac4
+X-Runtime: 0.022347
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+[
+    {
+        "id": 3728,
+        "name": "Sher Kocchar III",
+        "email": "kocchar_iii_sher@okuneva.co",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3726,
+        "name": "Lai Dhawan",
+        "email": "lai_dhawan@yost.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3725,
+        "name": "Agrata Kakkar",
+        "email": "agrata_kakkar@hamill-berge.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3723,
+        "name": "Dhanesh Varma",
+        "email": "varma_dhanesh@schuppe.io",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3722,
+        "name": "Gemine Khanna",
+        "email": "khanna_gemine@mueller.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3720,
+        "name": "Aanjaneya Bhattacharya",
+        "email": "bhattacharya_aanjaneya@cummings-senger.org",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3719,
+        "name": "Eshana Shah",
+        "email": "shah_eshana@durgan.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3717,
+        "name": "Eshana Naik LLD",
+        "email": "eshana_lld_naik@hilll.name",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3716,
+        "name": "Nikita Banerjee",
+        "email": "banerjee_nikita@erdman-abshire.info",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3715,
+        "name": "Deeptimoy Johar",
+        "email": "johar_deeptimoy@quigley-wiza.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3714,
+        "name": "Chanakya Gill",
+        "email": "gill_chanakya@balistreri-purdy.net",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3713,
+        "name": "Vimala Namboothiri",
+        "email": "vimala_namboothiri@kertzmann.net",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3711,
+        "name": "Shresth Chaturvedi",
+        "email": "chaturvedi_shresth@schmidt-hartmann.info",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3710,
+        "name": "Atmanand Iyengar",
+        "email": "atmanand_iyengar@von-zieme.org",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3709,
+        "name": "Mrs. Apsara Kaniyar",
+        "email": "kaniyar_apsara_mrs@mohr.info",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3708,
+        "name": "Suma Bharadwaj DVM",
+        "email": "bharadwaj_dvm_suma@ebert.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3707,
+        "name": "Girija Mehrotra",
+        "email": "mehrotra_girija@conroy-kuphal.net",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3706,
+        "name": "Prathamesh Mishra",
+        "email": "mishra_prathamesh@wisozk.net",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3705,
+        "name": "Vasudha Pilla",
+        "email": "vasudha_pilla@gislason.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3704,
+        "name": "Brijesh Shah",
+        "email": "shah_brijesh@blanda-berge.biz",
+        "gender": "female",
+        "status": "active"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[19262 [main] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1. This will Verify if Total record is 20
+----------------------------------------------------------------------------
+19262 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test006
+-------------------------------------------------------------------
+19262 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 6
+]]></system-err>
+  </testcase>
+  <testcase name="test007" classname="in.co.gorest.gorestinfo.UserCRUDTest" time="3.031">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.UserCRUDTest.test007(UserCRUDTest.java:90)
+</error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Authorization=Bearer 75c987adac5bd1820e58fb137137e2474501428068d1ec0dd68ae05bcff564c9
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 07 Jun 2022 17:44:27 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+X-Pagination-Total: 3654
+X-Pagination-Pages: 183
+X-Pagination-Page: 1
+X-Pagination-Limit: 20
+X-Links-Previous: 
+X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+ETag: W/"9d7541ccc6edcd62c8e379288fc6e6ea"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 1ff069c2-db38-4209-bff1-b34621f7c67e
+X-Runtime: 0.023614
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+[
+    {
+        "id": 3728,
+        "name": "Sher Kocchar III",
+        "email": "kocchar_iii_sher@okuneva.co",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3726,
+        "name": "Lai Dhawan",
+        "email": "lai_dhawan@yost.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3725,
+        "name": "Agrata Kakkar",
+        "email": "agrata_kakkar@hamill-berge.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3723,
+        "name": "Dhanesh Varma",
+        "email": "varma_dhanesh@schuppe.io",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3722,
+        "name": "Gemine Khanna",
+        "email": "khanna_gemine@mueller.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3720,
+        "name": "Aanjaneya Bhattacharya",
+        "email": "bhattacharya_aanjaneya@cummings-senger.org",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3719,
+        "name": "Eshana Shah",
+        "email": "shah_eshana@durgan.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3717,
+        "name": "Eshana Naik LLD",
+        "email": "eshana_lld_naik@hilll.name",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3716,
+        "name": "Nikita Banerjee",
+        "email": "banerjee_nikita@erdman-abshire.info",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3715,
+        "name": "Deeptimoy Johar",
+        "email": "johar_deeptimoy@quigley-wiza.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3714,
+        "name": "Chanakya Gill",
+        "email": "gill_chanakya@balistreri-purdy.net",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3713,
+        "name": "Vimala Namboothiri",
+        "email": "vimala_namboothiri@kertzmann.net",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3711,
+        "name": "Shresth Chaturvedi",
+        "email": "chaturvedi_shresth@schmidt-hartmann.info",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3710,
+        "name": "Atmanand Iyengar",
+        "email": "atmanand_iyengar@von-zieme.org",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3709,
+        "name": "Mrs. Apsara Kaniyar",
+        "email": "kaniyar_apsara_mrs@mohr.info",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3708,
+        "name": "Suma Bharadwaj DVM",
+        "email": "bharadwaj_dvm_suma@ebert.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3707,
+        "name": "Girija Mehrotra",
+        "email": "mehrotra_girija@conroy-kuphal.net",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3706,
+        "name": "Prathamesh Mishra",
+        "email": "mishra_prathamesh@wisozk.net",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3705,
+        "name": "Vasudha Pilla",
+        "email": "vasudha_pilla@gislason.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3704,
+        "name": "Brijesh Shah",
+        "email": "shah_brijesh@blanda-berge.biz",
+        "gender": "female",
+        "status": "active"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[21939 [main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: 2.id 3838 has name =Chaturbhuj Nehru DVM
+---------------------------------------------------------------------
+21955 [main] ERROR net.serenitybdd.core.Serenity - Index: 0, Size: 0
+21955 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test007
+-------------------------------------------------------------------
+21955 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 7
+]]></system-err>
+  </testcase>
+  <testcase name="test008" classname="in.co.gorest.gorestinfo.UserCRUDTest" time="1.628"/>
+  <testcase name="test009" classname="in.co.gorest.gorestinfo.UserCRUDTest" time="2.5">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.UserCRUDTest.test009(UserCRUDTest.java:110)
+</error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Authorization=Bearer 75c987adac5bd1820e58fb137137e2474501428068d1ec0dd68ae05bcff564c9
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 07 Jun 2022 17:44:32 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+X-Pagination-Total: 3654
+X-Pagination-Pages: 183
+X-Pagination-Page: 1
+X-Pagination-Limit: 20
+X-Links-Previous: 
+X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+ETag: W/"9d7541ccc6edcd62c8e379288fc6e6ea"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: b7af203c-120c-4cbc-bc6c-7d1f6ca27d48
+X-Runtime: 0.020393
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+[
+    {
+        "id": 3728,
+        "name": "Sher Kocchar III",
+        "email": "kocchar_iii_sher@okuneva.co",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3726,
+        "name": "Lai Dhawan",
+        "email": "lai_dhawan@yost.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3725,
+        "name": "Agrata Kakkar",
+        "email": "agrata_kakkar@hamill-berge.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3723,
+        "name": "Dhanesh Varma",
+        "email": "varma_dhanesh@schuppe.io",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3722,
+        "name": "Gemine Khanna",
+        "email": "khanna_gemine@mueller.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3720,
+        "name": "Aanjaneya Bhattacharya",
+        "email": "bhattacharya_aanjaneya@cummings-senger.org",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3719,
+        "name": "Eshana Shah",
+        "email": "shah_eshana@durgan.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3717,
+        "name": "Eshana Naik LLD",
+        "email": "eshana_lld_naik@hilll.name",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3716,
+        "name": "Nikita Banerjee",
+        "email": "banerjee_nikita@erdman-abshire.info",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3715,
+        "name": "Deeptimoy Johar",
+        "email": "johar_deeptimoy@quigley-wiza.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3714,
+        "name": "Chanakya Gill",
+        "email": "gill_chanakya@balistreri-purdy.net",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3713,
+        "name": "Vimala Namboothiri",
+        "email": "vimala_namboothiri@kertzmann.net",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3711,
+        "name": "Shresth Chaturvedi",
+        "email": "chaturvedi_shresth@schmidt-hartmann.info",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3710,
+        "name": "Atmanand Iyengar",
+        "email": "atmanand_iyengar@von-zieme.org",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3709,
+        "name": "Mrs. Apsara Kaniyar",
+        "email": "kaniyar_apsara_mrs@mohr.info",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3708,
+        "name": "Suma Bharadwaj DVM",
+        "email": "bharadwaj_dvm_suma@ebert.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3707,
+        "name": "Girija Mehrotra",
+        "email": "mehrotra_girija@conroy-kuphal.net",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3706,
+        "name": "Prathamesh Mishra",
+        "email": "mishra_prathamesh@wisozk.net",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3705,
+        "name": "Vasudha Pilla",
+        "email": "vasudha_pilla@gislason.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3704,
+        "name": "Brijesh Shah",
+        "email": "shah_brijesh@blanda-berge.biz",
+        "gender": "female",
+        "status": "active"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[26629 [main] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4.All ID has status =active
+----------------------------------------------------------------------------
+26629 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test009
+-------------------------------------------------------------------
+26629 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 9
+]]></system-err>
+  </testcase>
+  <testcase name="test010" classname="in.co.gorest.gorestinfo.UserCRUDTest" time="2.929">
+    <error message="Index: 0, Size: 0" type="java.lang.IndexOutOfBoundsException">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at in.co.gorest.gorestinfo.UserCRUDTest.test010(UserCRUDTest.java:118)
+</error>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://gorest.co.in/public/v2/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Authorization=Bearer 75c987adac5bd1820e58fb137137e2474501428068d1ec0dd68ae05bcff564c9
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 07 Jun 2022 17:44:34 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 0
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+X-RateLimit-Limit: 90
+X-RateLimit-Remaining: 89
+X-RateLimit-Reset: 1
+X-Pagination-Total: 3654
+X-Pagination-Pages: 183
+X-Pagination-Page: 1
+X-Pagination-Limit: 20
+X-Links-Previous: 
+X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+ETag: W/"9d7541ccc6edcd62c8e379288fc6e6ea"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: ad988099-8f0f-4ad2-a9aa-049f8a6147c2
+X-Runtime: 0.018720
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+Vary: Origin
+Content-Encoding: gzip
+
+[
+    {
+        "id": 3728,
+        "name": "Sher Kocchar III",
+        "email": "kocchar_iii_sher@okuneva.co",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3726,
+        "name": "Lai Dhawan",
+        "email": "lai_dhawan@yost.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3725,
+        "name": "Agrata Kakkar",
+        "email": "agrata_kakkar@hamill-berge.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3723,
+        "name": "Dhanesh Varma",
+        "email": "varma_dhanesh@schuppe.io",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3722,
+        "name": "Gemine Khanna",
+        "email": "khanna_gemine@mueller.com",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3720,
+        "name": "Aanjaneya Bhattacharya",
+        "email": "bhattacharya_aanjaneya@cummings-senger.org",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3719,
+        "name": "Eshana Shah",
+        "email": "shah_eshana@durgan.io",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3717,
+        "name": "Eshana Naik LLD",
+        "email": "eshana_lld_naik@hilll.name",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3716,
+        "name": "Nikita Banerjee",
+        "email": "banerjee_nikita@erdman-abshire.info",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3715,
+        "name": "Deeptimoy Johar",
+        "email": "johar_deeptimoy@quigley-wiza.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3714,
+        "name": "Chanakya Gill",
+        "email": "gill_chanakya@balistreri-purdy.net",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3713,
+        "name": "Vimala Namboothiri",
+        "email": "vimala_namboothiri@kertzmann.net",
+        "gender": "male",
+        "status": "active"
+    },
+    {
+        "id": 3711,
+        "name": "Shresth Chaturvedi",
+        "email": "chaturvedi_shresth@schmidt-hartmann.info",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3710,
+        "name": "Atmanand Iyengar",
+        "email": "atmanand_iyengar@von-zieme.org",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3709,
+        "name": "Mrs. Apsara Kaniyar",
+        "email": "kaniyar_apsara_mrs@mohr.info",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3708,
+        "name": "Suma Bharadwaj DVM",
+        "email": "bharadwaj_dvm_suma@ebert.info",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3707,
+        "name": "Girija Mehrotra",
+        "email": "mehrotra_girija@conroy-kuphal.net",
+        "gender": "female",
+        "status": "inactive"
+    },
+    {
+        "id": 3706,
+        "name": "Prathamesh Mishra",
+        "email": "mishra_prathamesh@wisozk.net",
+        "gender": "female",
+        "status": "active"
+    },
+    {
+        "id": 3705,
+        "name": "Vasudha Pilla",
+        "email": "vasudha_pilla@gislason.com",
+        "gender": "male",
+        "status": "inactive"
+    },
+    {
+        "id": 3704,
+        "name": "Brijesh Shah",
+        "email": "shah_brijesh@blanda-berge.biz",
+        "gender": "female",
+        "status": "active"
+    }
+]
+]]></system-out>
+    <system-err><![CDATA[29129 [main] ERROR net.serenitybdd.core.Serenity - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: 5.id 3829 has gender =female
+---------------------------------------------------------------------
+29129 [main] ERROR net.serenitybdd.core.Serenity - Index: 0, Size: 0
+29129 [main] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: test010
+-------------------------------------------------------------------
+29129 [main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 10
+]]></system-err>
+  </testcase>
+</testsuite>
